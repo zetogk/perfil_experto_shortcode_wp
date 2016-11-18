@@ -95,7 +95,7 @@
 function perfil_experto_function($atts){
 
 	$a = shortcode_atts( array(
-		'img' => 'http://lorempixel.com/200/200/people',
+		'img' => '',
 		'nombre' => '',
 		'correo' => '',
 		'descripcion' => '',
