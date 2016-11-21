@@ -1,79 +1,3 @@
-<style type="text/css">
-
-	.pe{
-		margin:0;
-		padding:0;
-	}
-
-	a.pe{
-		text-decoration: none !important;
-	}
-
-	hr.pe{
-		margin:10px 0;
-	}
-
-	.perfil_experto{
-		background: #E7E7E7;
-		border:1px solid #C5C5C5;
-		-webkit-border-radius: 10px;
-		-moz-border-radius: 10px;
-		border-radius: 10px;
-		padding:1em;
-	}
-
-	.pe_contenedor_img, .pe_texto_info_basica{
-		display: inline-block;
-		vertical-align:middle;
-	}
-
-	.pe_contenedor_img{
-		height:100px;
-		width:100px;
-	}
-
-	.pe_contenedor_img > img{
-		-webkit-border-radius: 100%;
-		-moz-border-radius: 100%;
-		border-radius: 100%;
-	}
-
-	.pe_texto_info_basica{
-		padding-left:1em;
-	}
-
-	h4.pe_nombre{
-		margin:0 !important;
-		padding:0 !important;
-	}
-
-	a.pe_correo{
-		color:black;
-		font-size: 0.75em;
-		text-decoration: none !important;
-	}
-
-	p.pe_descripcion{
-		font-size: 0.75em;
-		margin:0;
-	}
-
-	.pe_ul_enlaces{
-
-	}
-
-	.pe_ul_enlaces li{
-		display:inline-block;
-		margin: auto 0.5em;
-	}
-
-	a.pe_enlace {
-		text-decoration-line: none;
-		font-size: 0.75em;
-	}
-
-</style>
-
 <?php
  
 /*
@@ -89,8 +13,6 @@
 * Author URI: http://zetoslab.com
  
 */
-
-
  
 function perfil_experto_function($atts){
 
@@ -156,8 +78,13 @@ function perfil_experto_function($atts){
  
 }
  
+
 add_shortcode('perfil_experto', 'perfil_experto_function');
 
- 
-?>
+add_action( 'wp_enqueue_scripts', 'registrar_estilos_plugin' );
 
+function registrar_estilos_plugin() {
+	wp_register_style( 'perfil_experto', plugins_url( 'perfil_experto/css/estilos.css' ) );
+	wp_enqueue_style( 'perfil_experto' );
+}
+?>

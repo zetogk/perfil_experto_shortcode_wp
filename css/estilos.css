@@ -1,0 +1,78 @@
+	<style type="text/css">
+
+	.pe{
+		margin:0;
+		padding:0;
+	}
+
+	a.pe{
+		text-decoration: none !important;
+	}
+
+	hr.pe{
+		margin:5px 0;
+		padding: 0;
+	}
+
+	.perfil_experto{
+		background: #E7E7E7;
+		border:1px solid #C5C5C5;
+		-webkit-border-radius: 10px;
+		-moz-border-radius: 10px;
+		border-radius: 10px;
+		padding:1em 1em 0em 1em;
+	}
+
+	.pe_contenedor_img, .pe_texto_info_basica{
+		display: inline-block;
+		vertical-align:middle;
+	}
+
+	.pe_contenedor_img{
+		height:75px;
+		width:75px;
+	}
+
+	.pe_contenedor_img > img{
+		-webkit-border-radius: 100%;
+		-moz-border-radius: 100%;
+		border-radius: 100%;
+	}
+
+	.pe_texto_info_basica{
+		padding-left:1em;
+	}
+
+	h4.pe_nombre{
+		margin:0 !important;
+		padding:0 !important;
+	}
+
+	a.pe_correo{
+		color:black;
+		font-size: 0.8em;
+		text-decoration: none !important;
+	}
+
+	p.pe_descripcion{
+		font-size: 0.8em;
+		margin:0 !important;
+	}
+
+	.pe_ul_enlaces{
+		margin:0 !important;
+		padding-left:80px;
+	}
+
+	.pe_ul_enlaces li{
+		display:inline-block;
+		margin-bottom: 0 !important;
+		margin-right: 0.5em !important;
+	}
+
+	a.pe_enlace {
+		text-decoration-line: none;
+		font-size: 0.8em;
+	}
+
+</style>
