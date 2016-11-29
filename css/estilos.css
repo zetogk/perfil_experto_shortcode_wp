@@ -14,6 +14,19 @@
 		padding: 0;
 	}
 
+	.varios_en_linea{
+		display:inline-block;
+		margin: 0.5em auto;
+	}
+
+	.ancho100{
+		width:100%;
+	}
+
+	.ancho50{
+		width:48%;
+	}
+
 	.perfil_experto{
 		background: #E7E7E7;
 		border:1px solid #C5C5C5;

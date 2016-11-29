@@ -17,6 +17,8 @@
 function perfil_experto_function($atts){
 
 	$a = shortcode_atts( array(
+		'ancho' => '100', //100 o 50
+		'varios_en_linea' => '', //Vacío o varios_en_linea
 		'img' => '',
 		'nombre' => '',
 		'correo' => '',
@@ -30,7 +32,7 @@ function perfil_experto_function($atts){
 	), $atts );
  
 	?>
-		<div class="pe perfil_experto">
+		<div class="pe perfil_experto ancho<?php echo $a['ancho'] ?> <?php echo $a['varios_en_linea'] ?>" width="<?php echo $a['ancho'] ?>">
 			<div class="pe pe_info_basica">
 				<div class="pe pe_contenedor_img">
 					<img src="<?php echo $a['img'] ?>">
