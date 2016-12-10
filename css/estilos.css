@@ -88,4 +88,27 @@
 		font-size: 0.8em;
 	}
 
+
+	/*INICIO RESPONSIVE - MÁX 980px*/
+	@media (min-width: 361px) and (max-width: 980px) {
+		.ancho50{
+			width: 100% !important;
+		}
+	}
+
+	/*INICIO RESPONSIVE - MÁX 360px*/
+	@media (max-width: 360px) {
+
+		.ancho50{
+			width: 100% !important;
+		}
+
+		.pe_contenedor_img{
+			display:block;
+			margin:5px auto;
+			text-align: center;
+		}
+
+	}
+
 </style>
