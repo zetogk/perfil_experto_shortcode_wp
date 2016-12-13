@@ -23,6 +23,7 @@ function perfil_experto_function($atts){
 		'nombre' => '',
 		'correo' => '',
 		'descripcion' => '',
+		'link_titulo'=> '#',
 		'texto_link_1'=>'',
 		'link_1'=>'',
 		'texto_link_2'=>'',
@@ -38,7 +39,7 @@ function perfil_experto_function($atts){
 					<img src="<?php echo $a['img'] ?>">
 				</div>
 				<div class="pe pe_texto_info_basica">
-					<h4 class="pe pe_nombre"><?php echo $a['nombre']; ?></h4>
+					<a href="<?php echo $a['link_titulo'] ?>"><h4 class="pe pe_nombre"><?php echo $a['nombre']; ?></h4></a>
 					<a class="pe pe_correo" style="text-decoration:none;" href="#">
 						<?php
 							if($a['correo']!=''){
